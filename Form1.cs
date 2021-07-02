@@ -12,8 +12,9 @@ namespace TicTacToe
 {
     public partial class Form1 : Form
     {
-        bool turn = true; //true = X turn; false = Y turn
+        bool turn = true;
         int turn_count = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -21,39 +22,73 @@ namespace TicTacToe
 
         private void button_click(object sender, EventArgs e)
         {
-            Button b = (Button)sender;
+            Button bt = (Button)sender;
             if (turn)
-                b.Text = "X";
+                bt.Text = "X";
             else
-                b.Text = "O";
+                bt.Text = "O";
 
             turn = !turn;
-            b.Enabled = false;
+            bt.Enabled = false;
+            turn_count++;
+
+            WinDeclare();
         }
 
         private void WinDeclare()
         {
             bool winner = false;
-
-            //for horizontal win
+            //verticals
             if ((Tab1.Text == Tab2.Text) && (Tab2.Text == Tab3.Text) && (!Tab1.Enabled))
                 winner = true;
-            if ((Tab4.Text == Tab5.Text) && (Tab5.Text == Tab6.Text) && (!Tab4.Enabled))
+            else if ((Tab4.Text == Tab5.Text) && (Tab5.Text == Tab6.Text) && (!Tab4.Enabled))
                 winner = true;
-            if ((Tab7.Text == Tab8.Text) && (Tab8.Text == Tab9.Text) && (!Tab7.Enabled))
+            else if ((Tab7.Text == Tab8.Text) && (Tab8.Text == Tab9.Text) && (!Tab7.Enabled))
+                winner = true;
+
+            //verticals
+            else if ((Tab1.Text == Tab4.Text) && (Tab4.Text == Tab7.Text) && (!Tab1.Enabled))
+                winner = true;
+            else if ((Tab2.Text == Tab5.Text) && (Tab5.Text == Tab8.Text) && (!Tab2.Enabled))
+                winner = true;
+            else if ((Tab3.Text == Tab6.Text) && (Tab6.Text == Tab9.Text) && (!Tab3.Enabled))
+                winner = true;
+
+            //diagonals 
+            else if ((Tab1.Text == Tab5.Text) && (Tab5.Text == Tab9.Text) && (!Tab1.Enabled))
+                winner = true;
+            else if ((Tab3.Text == Tab5.Text) && (Tab5.Text == Tab7.Text) && (!Tab3.Enabled))
                 winner = true;
 
             if (winner)
             {
+                holdbuttons();
+
                 String win = "";
                 if (turn)
                     win = "0";
                 else
                     win = "X";
 
-                MessageBox.Show(win + "Congratulations", "Lodicakes");
+                MessageBox.Show(win + ", Congratulations" + " Lodicakes!" , "Winner has Ascended");
             }
-                
+            else
+            {
+                if (turn_count == 9)
+                    MessageBox.Show("It is a draw!", "Draw!");
+            }
+        }
+        private void holdbuttons()
+            {
+            try
+            {
+                foreach (Control c in Controls)
+                {
+                    Button bt = (Button)c;
+                    bt.Enabled = false;
+                }
+            }
+            catch { }
+            }
         }
     }
-}
