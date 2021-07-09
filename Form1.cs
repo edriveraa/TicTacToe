@@ -19,7 +19,6 @@ namespace TicTacToe
         {
             InitializeComponent();
         }
-
         private void button_click(object sender, EventArgs e)
         {
             Button bt = (Button)sender;
@@ -34,7 +33,6 @@ namespace TicTacToe
 
             WinDeclare();
         }
-
         private void WinDeclare()
         {
             bool winner = false;
@@ -62,15 +60,13 @@ namespace TicTacToe
 
             if (winner)
             {
-                holdbuttons();
-
                 String win = "";
                 if (turn)
                     win = "0";
                 else
                     win = "X";
 
-                MessageBox.Show(win + ", Congratulations" + " Lodicakes!" , "Winner has Ascended");
+                MessageBox.Show(win + ", Congratulations" + " Lodicakes!", "Winner has Ascended");
             }
             else
             {
@@ -78,17 +74,5 @@ namespace TicTacToe
                     MessageBox.Show("It is a draw!", "Draw!");
             }
         }
-        private void holdbuttons()
-            {
-            try
-            {
-                foreach (Control c in Controls)
-                {
-                    Button bt = (Button)c;
-                    bt.Enabled = false;
-                }
-            }
-            catch { }
-            }
-        }
     }
+}

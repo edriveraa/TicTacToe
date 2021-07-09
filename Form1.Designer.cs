@@ -43,118 +43,90 @@ namespace TicTacToe
             // 
             // Tab1
             // 
-            this.Tab1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(56)))), ((int)(((byte)(231)))));
-            this.Tab1.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tab1.ForeColor = System.Drawing.Color.White;
-            this.Tab1.Location = new System.Drawing.Point(12, 49);
+            resources.ApplyResources(this.Tab1, "Tab1");
+            this.Tab1.BackColor = System.Drawing.Color.Maroon;
+            this.Tab1.ForeColor = System.Drawing.Color.Black;
             this.Tab1.Name = "Tab1";
-            this.Tab1.Size = new System.Drawing.Size(88, 80);
-            this.Tab1.TabIndex = 0;
             this.Tab1.UseVisualStyleBackColor = false;
             this.Tab1.Click += new System.EventHandler(this.button_click);
             // 
             // Tab2
             // 
-            this.Tab2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(56)))), ((int)(((byte)(231)))));
-            this.Tab2.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tab2.ForeColor = System.Drawing.Color.White;
-            this.Tab2.Location = new System.Drawing.Point(106, 49);
+            resources.ApplyResources(this.Tab2, "Tab2");
+            this.Tab2.BackColor = System.Drawing.Color.Maroon;
+            this.Tab2.ForeColor = System.Drawing.Color.Black;
             this.Tab2.Name = "Tab2";
-            this.Tab2.Size = new System.Drawing.Size(88, 80);
-            this.Tab2.TabIndex = 1;
             this.Tab2.UseVisualStyleBackColor = false;
             this.Tab2.Click += new System.EventHandler(this.button_click);
             // 
             // Tab3
             // 
-            this.Tab3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(56)))), ((int)(((byte)(231)))));
-            this.Tab3.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tab3.ForeColor = System.Drawing.Color.White;
-            this.Tab3.Location = new System.Drawing.Point(200, 49);
+            resources.ApplyResources(this.Tab3, "Tab3");
+            this.Tab3.BackColor = System.Drawing.Color.Maroon;
+            this.Tab3.ForeColor = System.Drawing.Color.Black;
             this.Tab3.Name = "Tab3";
-            this.Tab3.Size = new System.Drawing.Size(87, 80);
-            this.Tab3.TabIndex = 2;
             this.Tab3.UseVisualStyleBackColor = false;
             this.Tab3.Click += new System.EventHandler(this.button_click);
             // 
             // Tab4
             // 
-            this.Tab4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(56)))), ((int)(((byte)(231)))));
-            this.Tab4.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tab4.ForeColor = System.Drawing.Color.White;
-            this.Tab4.Location = new System.Drawing.Point(12, 135);
+            resources.ApplyResources(this.Tab4, "Tab4");
+            this.Tab4.BackColor = System.Drawing.Color.Maroon;
+            this.Tab4.ForeColor = System.Drawing.Color.Black;
             this.Tab4.Name = "Tab4";
-            this.Tab4.Size = new System.Drawing.Size(88, 80);
-            this.Tab4.TabIndex = 3;
             this.Tab4.UseVisualStyleBackColor = false;
             this.Tab4.Click += new System.EventHandler(this.button_click);
             // 
             // Tab5
             // 
-            this.Tab5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(56)))), ((int)(((byte)(231)))));
-            this.Tab5.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tab5.ForeColor = System.Drawing.Color.White;
-            this.Tab5.Location = new System.Drawing.Point(106, 135);
+            resources.ApplyResources(this.Tab5, "Tab5");
+            this.Tab5.BackColor = System.Drawing.Color.Maroon;
+            this.Tab5.ForeColor = System.Drawing.Color.Black;
             this.Tab5.Name = "Tab5";
-            this.Tab5.Size = new System.Drawing.Size(88, 80);
-            this.Tab5.TabIndex = 4;
             this.Tab5.UseVisualStyleBackColor = false;
             this.Tab5.Click += new System.EventHandler(this.button_click);
             // 
             // Tab6
             // 
-            this.Tab6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(56)))), ((int)(((byte)(231)))));
-            this.Tab6.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tab6.ForeColor = System.Drawing.Color.White;
-            this.Tab6.Location = new System.Drawing.Point(199, 135);
+            resources.ApplyResources(this.Tab6, "Tab6");
+            this.Tab6.BackColor = System.Drawing.Color.Maroon;
+            this.Tab6.ForeColor = System.Drawing.Color.Black;
             this.Tab6.Name = "Tab6";
-            this.Tab6.Size = new System.Drawing.Size(88, 80);
-            this.Tab6.TabIndex = 5;
             this.Tab6.UseVisualStyleBackColor = false;
             this.Tab6.Click += new System.EventHandler(this.button_click);
             // 
             // Tab7
             // 
-            this.Tab7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(56)))), ((int)(((byte)(231)))));
-            this.Tab7.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tab7.ForeColor = System.Drawing.Color.White;
-            this.Tab7.Location = new System.Drawing.Point(12, 221);
+            resources.ApplyResources(this.Tab7, "Tab7");
+            this.Tab7.BackColor = System.Drawing.Color.Maroon;
+            this.Tab7.ForeColor = System.Drawing.Color.Black;
             this.Tab7.Name = "Tab7";
-            this.Tab7.Size = new System.Drawing.Size(88, 80);
-            this.Tab7.TabIndex = 6;
             this.Tab7.UseVisualStyleBackColor = false;
             this.Tab7.Click += new System.EventHandler(this.button_click);
             // 
             // Tab8
             // 
-            this.Tab8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(56)))), ((int)(((byte)(231)))));
-            this.Tab8.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tab8.ForeColor = System.Drawing.Color.White;
-            this.Tab8.Location = new System.Drawing.Point(106, 221);
+            resources.ApplyResources(this.Tab8, "Tab8");
+            this.Tab8.BackColor = System.Drawing.Color.Maroon;
+            this.Tab8.ForeColor = System.Drawing.Color.Black;
             this.Tab8.Name = "Tab8";
-            this.Tab8.Size = new System.Drawing.Size(88, 80);
-            this.Tab8.TabIndex = 7;
             this.Tab8.UseVisualStyleBackColor = false;
             this.Tab8.Click += new System.EventHandler(this.button_click);
             // 
             // Tab9
             // 
-            this.Tab9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(65)))), ((int)(((byte)(56)))), ((int)(((byte)(231)))));
-            this.Tab9.Font = new System.Drawing.Font("Showcard Gothic", 24F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Tab9.ForeColor = System.Drawing.Color.White;
-            this.Tab9.Location = new System.Drawing.Point(199, 221);
+            resources.ApplyResources(this.Tab9, "Tab9");
+            this.Tab9.BackColor = System.Drawing.Color.Maroon;
+            this.Tab9.ForeColor = System.Drawing.Color.Black;
             this.Tab9.Name = "Tab9";
-            this.Tab9.Size = new System.Drawing.Size(88, 80);
-            this.Tab9.TabIndex = 8;
             this.Tab9.UseVisualStyleBackColor = false;
             this.Tab9.Click += new System.EventHandler(this.button_click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MidnightBlue;
-            this.ClientSize = new System.Drawing.Size(305, 320);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(22)))), ((int)(((byte)(22)))));
             this.Controls.Add(this.Tab9);
             this.Controls.Add(this.Tab8);
             this.Controls.Add(this.Tab7);
@@ -164,9 +136,9 @@ namespace TicTacToe
             this.Controls.Add(this.Tab3);
             this.Controls.Add(this.Tab2);
             this.Controls.Add(this.Tab1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.ForeColor = System.Drawing.Color.Chocolate;
             this.Name = "Form1";
-            this.Text = "Tic-Tac-Toe";
+            this.TransparencyKey = System.Drawing.Color.Black;
             this.ResumeLayout(false);
 
         }
